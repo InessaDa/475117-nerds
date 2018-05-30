@@ -1,7 +1,8 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Инесса Белышева](https://up.htmlacademy.ru/htmlcss/21/user/475117).
-* Наставник: Илья Туров.
+* Наставник: [Илья Туров] (https://htmlacademy.ru/profile/turov) 
+
 
 ---
 
