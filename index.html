@@ -7,7 +7,7 @@
   <body>
 	<header class="main-header">
 		<nav class="main-navigation">
-			<a class="main-header-logo"><img class="main-logo" src="img/nerds-logo.svg"></a>
+			<a class="main-header-logo"><img class="main-logo" src="img/nerds-logo.svg" alt="Логотип студии Nёrds"></a>
 			<ul class="nav-list">
 				<li class="nav-item"><a class="nav-link" href="#">Студия</a></li>
 				<li><a href="#">Клиенты</a></li>
@@ -98,22 +98,22 @@
     <ul class="projects-list">
     	<li class="projects-item">
     		<a class="projects-link" href="https://htmlacademy.ru/intensive/htmlcss">
-    			<img class="projects-image" src="img/logo-1.png" width="199" height="68">
+    			<img class="projects-image" src="img/logo-1.png" width="199" height="68" alt="Логотип сайта HTML Academy">
     		</a>
     	</li>
     	<li class="projects-item">
     		<a class="projects-link" href="#">
-    			<img class="projects-image" src="img/logo-2.png" width="209" height="90">
+    			<img class="projects-image" src="img/logo-2.png" width="209" height="90" alt="Логотип салона Barbersop Borodinski">
     		</a>
     	</li>
     	<li class="projects-item">
     		<a class="projects-link" href="#">
-    			<img class="projects-image" src="img/logo-3.png" width="185" height="52">
+    			<img class="projects-image" src="img/logo-3.png" width="185" height="52" alt="Логотип приложения Pink">
     		</a>
     	</li>
     	<li class="projects-item">
     		<a class="projects-link" href="#">
-    			<img class="projects-image" src="img/logo-4.png" width="173" height="84">
+    			<img class="projects-image" src="img/logo-4.png" width="173" height="84" alt="Логотип интернет-магазина Mishka">
     		</a>
     	</li>
     </ul>
@@ -128,6 +128,20 @@
     	</div>
     </div>
 </main>
+
+<div class="pop-up">
+    <h2 class="form-title"> Напишите нам</h2>
+    <button type="button" area-lable="close-button" class="close-button">Закрыть окно</button>
+    <form action="https://echo.htmlacademy.ru" method="post">
+        <label for="name">Ваше имя:</label>
+        <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+        <label for="e-mail">Ваш e-mail:</label>
+        <input type="text" name="e-mail" id="e-mail" placeholder="email@example.com">
+        <label for="text">Текст письма:</label>
+        <textarea name="text" id="text" placeholder="в свободной форме" rows="5" cols="50"></textarea>
+        <button class="btn" type="submit">Отправить</button>
+    </form>
+</div>
 
 <footer class="footer">
 	<ul class="social-list">
@@ -151,7 +165,4 @@
 </footer>
 
 </body>
-</html>
-
-  </body>
 </html>
