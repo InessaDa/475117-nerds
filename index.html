@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page">
 	<header class="main-header">
 		<nav class="main-navigation">
 			<a class="main-header-logo"><img class="main-logo" src="img/nerds-logo.svg" alt="Логотип студии Nёrds"></a>
@@ -66,14 +68,14 @@
     	<h2 class="about-title">Мы маленькая, но гордая дизайн-студия из Краснодара</h2>
     	<p class="about-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива.
     	 Работаем не покладая рук, как роботы.</p>
-    	 <p class="about-orders">
-    	 	Выполняем заказы на разработку:
+    	<div class="about-orders">
+    	 	<h6 class="orders-title">Выполняем заказы на разработку:</h6>
     	 	<ul class="orders-list">
     	 		<li class="orders-item">Вэб-сайтов любой сложности</li>
     	 		<li class="orders-item">Мобильных приложений для IOS и Android</li>
     	 		<li class="orders-item">Слайдшоу и видео для корпоративных презентаций</li>
     	 	</ul>
-    	 </p>
+    	</div>
 
     	 </div>
     	 <div class="about-features">
@@ -131,7 +133,7 @@
 
 <div class="pop-up">
     <h2 class="form-title"> Напишите нам</h2>
-    <button type="button" area-lable="close-button" class="close-button">Закрыть окно</button>
+    <button type="button" class="close-button">Закрыть окно</button>
     <form action="https://echo.htmlacademy.ru" method="post">
         <label for="name">Ваше имя:</label>
         <input type="text" name="name" id="name" placeholder="Имя Фамилия">

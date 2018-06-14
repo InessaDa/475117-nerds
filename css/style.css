@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/roboto.woff2"), url("../fonts/roboto.woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/robotomedium.woff2"), url("../fonts/robotomedium.woff");
+    font-weight: medium;
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url("../fonts/robotobold.woff2"), url("../fonts/robotobold.woff");
+	font-weight: bold;
+}
+
+.page {
+	font-family: "Roboto", Arial, sans-serif;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+	display: block;
+	width: 100%;
+}

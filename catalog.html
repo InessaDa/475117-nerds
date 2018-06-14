@@ -22,7 +22,61 @@
 		  <h1>Магазин готовых шаблонов</h1>
 	    </div>
 	    <div class="content">
-	    	<div class="form"></div>
+	    	<form class="sort-forms" action="https://echo.htmlacademy.ru" method="post">
+    <fieldset class="cost-sort">
+      <legend class="sort-title">Стоимость:</legend> <br>
+      <input type="range" name="cost" min="0" max="15000" step="500"><br>
+      <label for="cost-from">От</label>
+      <input type="text" name="cost-min" value="0" placeholder="0" id="cost-from">
+      <label for="cost-to">До</label>
+      <input type="text" name="cost-max" value="15000" placeholder="15000" id="cost-to">
+    </fieldset>
+
+<fieldset class="grid-sort">
+     <legend class="sort-title">Сетка:</legend>
+     <ul class="grid-list">
+        <li class="grid-item">
+            <input type="radio" name="grid" value="adaptive" checked="" id="adaptive">
+            <label for="adaptive">Адаптивная</label>
+        </li>
+        <li class="grid-item">
+            <input type="radio" name="grid" value="fix" id="fix">
+            <label for="fix">Фиксированная</label>
+        </li>
+        <li class="grid-item">
+            <input type="radio" name="grid" value="rubber" id="rubber">
+            <label for="rubber">Резиновая</label>
+        </li>
+     </ul>
+</fieldset>
+
+<fieldset class="features-sort">
+    <legend class="sort-title">Особенности:</legend>
+    <ul class="features-list">
+        <li class="features-item">
+            <input type="checkbox" name="slider" id="slider" checked="">
+            <label for="slider">Слайдер</label>
+        </li>
+        <li class="features-item">
+            <input type="checkbox" name="block-features" id="block-features">
+            <label for="block-features">Блок преимуществ</label>
+        </li>
+        <li class="features-item">
+            <input type="checkbox" name="news" id="news" checked="">
+            <label for="news">Новости</label>
+        </li>
+        <li class="features-item">
+            <input type="checkbox" name="gallery" id="gallery">
+            <label for="gallery">Галерея</label>
+        </li>
+        <li class="features-item">
+            <input type="checkbox" name="cart" id="cart">
+            <label for="cart">Корзина</label>
+        </li>
+    </ul>
+ </fieldset>
+    <button class="btn form-btn" type="submit" >Отправить</button>
+</form>
 	    	<div class="catalog">
 	    		<div class="sort">
 	    			<span class="sort-title">Сортировать</span>
