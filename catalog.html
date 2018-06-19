@@ -3,18 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
 	<header class="main-header">
 		<nav class="main-navigation">
 			<a class="main-header-logo" href="index.html"><img class="main-logo" src="img/nerds-logo.svg" alt="Логотип студии Nёrds"></a>
 			<ul class="nav-list">
-				<li class="nav-item"><a class="nav-link" href="#">Студия</a></li>
+				<li class="nav-item"><a class="nav-link" href="index.html">Студия</a></li>
 				<li><a href="#">Клиенты</a></li>
 				<li><a href="catalog.html">Магазин</a></li>
 				<li><a href="#">Контакты</a></li>
 			</ul>
-			<div><a href="cart.html">Корзина</a></div>
+			<div><a href="#">Корзина</a></div>
 		</nav>
 	</header>
 	<main class="main">
@@ -22,7 +24,7 @@
 		  <h1>Магазин готовых шаблонов</h1>
 	    </div>
 	    <div class="content">
-	    	<form class="sort-forms" action="https://echo.htmlacademy.ru" method="post">
+<form class="sort-forms" action="https://echo.htmlacademy.ru" method="post">
     <fieldset class="cost-sort">
       <legend class="sort-title">Стоимость:</legend> <br>
       <input type="range" name="cost" min="0" max="15000" step="500"><br>
@@ -75,7 +77,7 @@
         </li>
     </ul>
  </fieldset>
-    <button class="btn form-btn" type="submit" >Отправить</button>
+    <button class="btn form-btn" type="submit" >Показать</button>
 </form>
 	    	<div class="catalog">
 	    		<div class="sort">
@@ -169,16 +171,16 @@
                 </ul>
                 <ul class="pagination-list">
                 	<li class="pagination-item">
-                		<button class="pagination-btn pagination-btn-active">1</button>
+                		<button class="btn pagination-btn pagination-btn-active">1</button>
                 	</li>
                 	<li class="pagination-item">
-                		<button class="pagination-btn">2</button>
+                		<button class="btn pagination-btn">2</button>
                 	</li>
                 	<li class="pagination-item">
-                		<button class="pagination-btn">3</button>
+                		<button class="btn pagination-btn">3</button>
                 	</li>
                 	<li class="pagination-item">
-                		<button class="pagination-btn pagination-btn-next">Следующая</button>
+                		<button class="btn pagination-btn pagination-btn-next">Следующая</button>
                 	</li>
                 </ul>
 	    	</div>
@@ -193,6 +195,20 @@
     	</div>
     </div>
 </main>
+
+<div class="pop-up">
+    <h2 class="form-title"> Напишите нам</h2>
+    <button type="button" class="btn close-button">Закрыть окно</button>
+    <form action="https://echo.htmlacademy.ru" method="post">
+        <label for="name">Ваше имя:</label>
+        <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+        <label for="e-mail">Ваш e-mail:</label>
+        <input type="text" name="e-mail" id="e-mail" placeholder="email@example.com">
+        <label for="text">Текст письма:</label>
+        <textarea name="text" id="text" placeholder="в свободной форме" rows="5" cols="50"></textarea>
+        <button class="btn" type="submit">Отправить</button>
+    </form>
+</div>
 
 <footer class="footer">
 	<ul class="social-list">

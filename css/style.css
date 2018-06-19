@@ -16,8 +16,28 @@
 	font-weight: bold;
 }
 
+body {
+	margin: 0;
+	padding: 0;
+}
+
 .page {
 	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: normal;
+	color: #283136;
+
+	background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+	display: block;
+	width: 100%;
 }
 
 *, *::before, *::after {
@@ -39,11 +59,284 @@
   overflow: hidden;
 }
 
-a {
-    text-decoration: none;
+.main-logo:hover {
+	opacity: 0.8;
 }
 
-img {
-	display: block;
-	width: 100%;
+.main-logo:active {
+	opacity: 0.3;
+}
+
+.main-navigation {
+	line-height: 30px;
+	font-weight: medium;
+	color: #000000;
+
+	background-color: #eeeeee;
+}
+
+.main-navigation a {
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.main-navigation a:hover {
+	color: #fb565a;
+}
+
+.main-navigation a:focus {
+	color: #fb565a;
+}
+
+.main-navigation a:active {
+	color: #a6a6a6;
+}
+
+.slide-title {
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: medium;
+	color: #000000;
+
+	background-color: #eeeeee;
+}
+
+.slide-description {
+	background-color: #eeeeee;
+}
+
+.btn  {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #fff4f4;
+    background-color: #fb565a;
+    border: none;
+}
+
+.btn:hover {
+	background-color: #e74246;
+}
+
+.btn:active {
+	color: #e37376;
+	background-color: #d7373b;
+}
+
+
+.services-list {
+	list-style: none;
+}
+
+.services-item-title {
+	font-size: 24px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.btn-services-red:hover {
+	background-color: #e74246;
+}
+
+.btn-services-red:active {
+	color: #e37376;
+	background-color: #e74246;
+}
+
+.btn-services-green {
+	background-color: #00ca74;
+}
+
+.btn-services-green:hover {
+	background-color: #00bc6c;
+}
+
+.btn-services-green:active {
+	color: #4dc491;
+	background-color: #00aa62;
+}
+
+.btn-services-yellow {
+	background-color: #efc849;
+}
+
+.btn-services-yellow:hover {
+	background-color: #eab534;
+}
+
+.btn-services-yellow:active {
+	color: #edc265;
+	background-color: #e5a722;
+}
+
+.about-title {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: medium;
+	color: #000000;
+}
+.orders-title {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000000;
+}
+.about-features-title {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.features-list {
+	list-style: none;
+}
+
+.features-item-persent {
+	font-size: 45px;
+	line-height: 10px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.projects-list {
+	list-style: none;
+}
+
+.projects-image {
+	opacity: 0.2;
+}
+
+.projects-image:hover {
+	opacity: 1;
+}
+
+.projects-image:active {
+	opacity: 0.1;
+}
+
+.contact-us-title {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.contact-address,
+.contact-phone {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #666666;
+}
+
+.pop-up input:hover,
+.pop-up input:focus,
+.pop-up textarea:hover,
+.pop-up textarea:focus {
+	border-color: #000000;
+}
+
+.form-title {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: medium;
+	color: #000000;
+}
+
+.footer-promo-title {
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.footer-promo-content {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: normal;
+
+}
+
+.sort-title {
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.sort-link {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #000000;
+	opacity: 0.3;
+}
+
+.sort-link:hover {
+	opacity: 0.6;
+}
+
+.sort-link:active,
+.sort-link:disabled {
+	opacity: 1;
+}
+
+.grid-item {
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: normal;
+	color: #283136;
+}
+
+.grid-item input {
+
+}
+
+.form-btn {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: medium;
+	text-transform: uppercase;
+	color: #000000;
+	background-color: #eeeeee;
+}
+
+.form-btn:hover,
+.form-btn:focus {
+	background-color: #dfdfdf;
+}
+
+.form-btn:active{
+	color: #000000;
+	opacity: 0.3;
+}
+
+.pagination-list {
+	list-style: none;
+}
+
+.pagination-btn {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: medium;
+	text-transform: uppercase;
+	color: #000000;
+	background-color: #eeeeee;
+}
+
+.pagination-btn:hover,
+.pagination-btn:focus {
+	background-color: #dfdfdf;
+}
+
+.pagination-btn:active {
+	color: #959595;
+	background-color: #d5d5d5;
 }
