@@ -37,7 +37,7 @@ a {
 
 img {
 	display: block;
-	width: 100%;
+	max-width: 100%;
 }
 
 *, *::before, *::after {
@@ -59,6 +59,14 @@ img {
   overflow: hidden;
 }
 
+.main-logo {
+	width: 160px;
+	height: 65px;
+	padding-left: 140px;
+	padding-right: 150px;
+	padding-top: 50px;
+}
+
 .main-logo:hover {
 	opacity: 0.8;
 }
@@ -73,6 +81,28 @@ img {
 	color: #000000;
 
 	background-color: #eeeeee;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.catalog-intro {
+background-color: #eeeeee;
+}
+
+.nav-list {
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+
+.nav-item {
+    padding-left: 45px;
+	padding-right: 45px;
+}
+
+.cart {
+	margin: 75px;
 }
 
 .main-navigation a {
@@ -93,7 +123,7 @@ img {
 }
 
 .slide-title {
-	font-size: 55px;
+	font-size: 50px;
 	line-height: 55px;
 	font-weight: medium;
 	color: #000000;
@@ -124,9 +154,25 @@ img {
 	background-color: #d7373b;
 }
 
+.btn-slide {
+	padding: 10px;
+	width: 240px;
+}
+
+.btn-services {
+	width: 160px;
+	height: 50px;
+}
 
 .services-list {
 	list-style: none;
+	display: flex;
+	margin-top: 250px;
+}
+
+.services-item-1 {
+	background-image: url(../img/illustration-1.png);
+	background-repeat: no-repeat;
 }
 
 .services-item-title {
@@ -147,6 +193,7 @@ img {
 
 .btn-services-green {
 	background-color: #00ca74;
+
 }
 
 .btn-services-green:hover {
@@ -169,6 +216,10 @@ img {
 .btn-services-yellow:active {
 	color: #edc265;
 	background-color: #e5a722;
+}
+
+.about {
+	display: flex;
 }
 
 .about-title {
@@ -194,6 +245,7 @@ img {
 
 .features-list {
 	list-style: none;
+	display: flex;
 }
 
 .features-item-persent {
@@ -205,6 +257,8 @@ img {
 
 .projects-list {
 	list-style: none;
+	display: flex;
+	justify-content: center;
 }
 
 .projects-image {
@@ -219,11 +273,21 @@ img {
 	opacity: 0.1;
 }
 
+.contact-us {
+	display: flex;
+	flex-direction: column;
+	margin-left: 140px;
+	width: 317;
+	height: 309;
+}
+
 .contact-us-title {
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: bold;
 	text-transform: uppercase;
+	padding-top: 53;
+	padding-bottom: 31px;
 }
 
 .contact-address,
@@ -232,6 +296,11 @@ img {
 	line-height: 18px;
 	font-weight: normal;
 	color: #666666;
+}
+
+.contact-us-btn {
+	border-radius: 5px;
+	width: 219px;
 }
 
 .pop-up input:hover,
@@ -339,4 +408,74 @@ img {
 .pagination-btn:active {
 	color: #959595;
 	background-color: #d5d5d5;
+}
+
+/* СЛААААААЙДЕЕЕЕЕР */
+
+.slide {
+	display: flex;
+}
+
+.slide-content{
+	width: 380px;
+	padding-left: 120px;
+}
+
+.slider {
+  position: relative;
+  background: #eeeeee;
+  height: 428px;
+}
+
+.slider-pagination {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  z-index: 11;
+}
+
+.slider-pagination-btn {
+  position: relative;
+  background: #ffffff;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 17px;
+}
+
+.slider-pagination-btn:active {
+  opacity: 0.5;
+}
+
+.slider-pagination-btn-active::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 4px;
+  height: 4px;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
+}
+
+.slide {
+  position: absolute;
+  opacity: 0;
+  transition: all .5s ease-out;
+}
+
+.slide:target {
+  z-index: 10;
+  opacity: 1;
+}
+
+.sort-forms {
+	display: flex;
+	flex-direction: column;
+	width: 260px;
 }
