@@ -28,27 +28,29 @@
     <form class="sort-forms" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="cost-sort">
         <legend class="sort-title">Стоимость:</legend>
-        <input type="range" name="cost" min="0" max="15000" step="500"><br>
+        <input class="range" type="range" name="cost" min="0" max="15000" step="500">
+      <div class="costs-input">
         <label for="cost-from">От</label>
         <input type="text" name="cost-min" value="0" placeholder="0" id="cost-from">
         <label for="cost-to">До</label>
         <input type="text" name="cost-max" value="15000" placeholder="15000" id="cost-to">
+      </div>
       </fieldset>
 
       <fieldset class="grid-sort">
         <legend class="sort-title">Сетка:</legend>
         <ul class="grid-list">
           <li class="grid-item">
-            <input type="radio" name="grid" value="adaptive" checked="" id="adaptive">
-            <label for="adaptive">Адаптивная</label>
+            <input class="visually-hidden grid-item-input" type="radio" name="grid" value="adaptive" checked="" id="adaptive">
+            <label class="grid-item-lable" for="adaptive">Адаптивная</label>
           </li>
           <li class="grid-item">
-            <input type="radio" name="grid" value="fix" id="fix">
-            <label for="fix">Фиксированная</label>
+            <input class="visually-hidden grid-item-input" type="radio" name="grid" value="fix" id="fix">
+            <label class="grid-item-lable" for="fix">Фиксированная</label>
           </li>
           <li class="grid-item">
-            <input type="radio" name="grid" value="rubber" id="rubber">
-            <label for="rubber">Резиновая</label>
+            <input class="visually-hidden grid-item-input" type="radio" name="grid" value="rubber" id="rubber">
+            <label class="grid-item-lable" for="rubber">Резиновая</label>
           </li>
         </ul>
       </fieldset>
@@ -57,24 +59,24 @@
         <legend class="sort-title">Особенности:</legend>
         <ul class="features-sort-list">
           <li class="features-sort-item">
-            <input type="checkbox" name="slider" id="slider" checked="">
-            <label for="slider">Слайдер</label>
+            <input class="visually-hidden features-sort-input" type="checkbox" name="slider" id="slider" checked="">
+            <label class="features-sort-lable" for="slider">Слайдер</label>
           </li>
           <li class="features-sort-item">
-            <input type="checkbox" name="block-features" id="block-features">
-            <label for="block-features">Блок преимуществ</label>
+            <input class="visually-hidden features-sort-input" type="checkbox" name="block-features" id="block-features">
+            <label class="features-sort-lable" for="block-features">Блок преимуществ</label>
           </li>
           <li class="features-sort-item">
-            <input type="checkbox" name="news" id="news" checked="">
-            <label for="news">Новости</label>
+            <input class="visually-hidden features-sort-input" type="checkbox" name="news" id="news" checked="">
+            <label class="features-sort-lable" for="news">Новости</label>
           </li>
           <li class="features-sort-item">
-            <input type="checkbox" name="gallery" id="gallery">
-            <label for="gallery">Галерея</label>
+            <input class="visually-hidden features-sort-input" type="checkbox" name="gallery" id="gallery">
+            <label class="features-sort-lable" for="gallery">Галерея</label>
           </li>
           <li class="features-sort-item">
-            <input type="checkbox" name="cart" id="cart">
-            <label for="cart">Корзина</label>
+            <input class="visually-hidden features-sort-input" type="checkbox" name="cart" id="cart">
+            <label class="features-sort-lable" for="cart">Корзина</label>
           </li>
         </ul>
       </fieldset>
