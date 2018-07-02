@@ -12,9 +12,9 @@
     <a class="main-header-logo" href="index.html"><img class="main-logo" src="img/nerds-logo.svg"
                                                        alt="Логотип студии Nёrds"></a>
     <ul class="nav-list">
-      <li class="nav-item"><a class="nav-link" href="index.html">Студия</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Студия</a></li>
       <li class="nav-item"><a class="nav-link" href="#">Клиенты</a></li>
-      <li class="nav-item"><a class="nav-link" href="catalog.html">Магазин</a></li>
+      <li class="nav-item nav-item-active"><a class="nav-link">Магазин</a></li>
       <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
     </ul>
     <div class="cart"><a href="#">Корзина</a></div>
@@ -22,19 +22,25 @@
 </header>
 <main class="main">
   <div class="catalog-intro">
-    <h1 class="catalog-intro-title" ">Магазин готовых шаблонов</h1>
+    <h1 class="catalog-intro-title">Магазин готовых шаблонов</h1>
   </div>
   <div class="content">
-    <form class="sort-forms" action="https://echo.htmlacademy.ru" method="post">
+    <form class="sort-forms" action="https://echo.htmlacademy.ru" method="get">
       <fieldset class="cost-sort">
         <legend class="sort-title">Стоимость:</legend>
-        <input class="range" type="range" name="cost" min="0" max="15000" step="500">
-      <div class="costs-input">
-        <label for="cost-from">От</label>
-        <input type="text" name="cost-min" value="0" placeholder="0" id="cost-from">
-        <label for="cost-to">До</label>
-        <input type="text" name="cost-max" value="15000" placeholder="15000" id="cost-to">
-      </div>
+        <div class="range-filter">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+          <div class="price-controls">
+            <label class="min-price">от<input type="text" name="min-price" value="0"></label>
+            <label class="max-price">до<input type="text" name="max-price" value="15000"></label>
+          </div>
+        </div>
       </fieldset>
 
       <fieldset class="grid-sort">
@@ -84,7 +90,7 @@
     </form>
     <div class="catalog">
       <div class="sort">
-        <span class="sort-title">Сортировать</span>
+        <span class="sort-title">Сортировать:</span>
         <ul class="sort-list">
           <li class="sort-item sort-item-active">
             <a class="sort-link" href="#">по цене </a>
@@ -197,10 +203,10 @@
   <div class="map">
     <div class="contact-us">
       <p class="contact-us-title">Nёrds design studio</p>
-      <address>191186, Санкт-Петербург,
+      <address class="contact-address">191186, Санкт-Петербург,
         ул. Б. Конюшенная, д. 19/8
       </address>
-      <a class="contact-phone" href="tel:+7(812)275-75-75">тел.+7(812)275-75-75</a>
+      <a class="contact-phone" href="tel:+7(812)275-75-75">тел. +7 (812) 275-75-75</a>
       <button class="btn contact-us-btn">Напишите нам</button>
     </div>
   </div>
