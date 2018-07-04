@@ -7,31 +7,32 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page">
-  <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header-logo"><img class="main-logo" src="img/nerds-logo.svg"
-                                                         alt="Логотип студии Nёrds"></a>
-      <ul class="nav-list">
-        <li class="nav-item"><a class="nav-link" href="#">Студия</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Клиенты</a></li>
-        <li class="nav-item"><a class="nav-link" href="catalog.html">Магазин</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
-      </ul>
-      <div class="cart"><a href="#">Корзина</a></div>
-    </nav>
+<header class="main-header">
+  <nav class="main-navigation">
+    <a class="main-header-logo"><img class="main-logo" src="img/nerds-logo.svg"
+                                     alt="Логотип студии Nёrds"></a>
+    <ul class="nav-list">
+      <li class="nav-item"><a class="nav-link" href="#">Студия</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Клиенты</a></li>
+      <li class="nav-item"><a class="nav-link" href="catalog.html">Магазин</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+    </ul>
+    <div class="cart"><a href="#">Корзина</a></div>
+  </nav>
 </header>
 <main>
   <div class="slider">
     <div class="wrapper">
-      <div class="slide" id="slideFirst">
+      <div class="slide slideFirts" id="slideFirst">
         <div class="slide-content">
-          <b class="slide-title">Долго, дорого, скрупулезно.</b>
-          <p class="slide-description">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+          <b class="slide-title">Долго, дорого,<br> скрупулезно.</b>
+          <p class="slide-description">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.
+          </p>
           <a class="btn btn-slide" href="#">Узнать больше</a>
         </div>
         <img class="slide-image" src="img/slide1.png" width="698" height="413" alt="первый слайд">
       </div>
-      <div class="slide" id="slideSecond">
+      <div class="slide slideSecond" id="slideSecond">
         <div class="slide-content">
           <b class="slide-title">Любим математику как никто другой.</b>
           <p class="slide-description">Никакого креатива, только математические формулы для расчета идеальных
@@ -40,10 +41,10 @@
         </div>
         <img class="slide-image" src="img/slide2.png" width="663" height="430" alt="второй слайд">
       </div>
-      <div class="slide" id="slideThird">
+      <div class="slide slideThird" id="slideThird">
         <div class="slide-content">
-          <b class="slide-title">Только ночь, только хардкор.</b>
-          <p class="slide-description">Работать днем, как все? Мы против этого. Ближе к полуночи работа только
+          <b class="slide-title">Только ночь,<br> только хардкор.</b>
+          <p class="slide-description">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только
             начинается.</p>
           <a class="btn btn-slide" href="#">Узнать больше</a>
         </div>
@@ -92,15 +93,15 @@
       <h6 class="about-features-title">С 2004 года любим точность во всем:</h6>
       <ul class="features-list">
         <li class="features-item">
-          <b class="features-item-persent">146<sup>%</sup></b>
+          <b class="features-item-percent">146<sup>%</sup></b>
           <span>Уровень самоотдачи</span>
         </li>
         <li class="features-item">
-          <b class="features-item-persent">100<sup>%</sup></b>
+          <b class="features-item-percent">100<sup>%</sup></b>
           <span>Соблюдение сроков</span>
         </li>
         <li class="features-item">
-          <b class="features-item-persent">50<sup>%</sup></b>
+          <b class="features-item-percent">50<sup>%</sup></b>
           <span>Минимальная предоплата</span>
         </li>
       </ul>
@@ -131,44 +132,49 @@
     </li>
   </ul>
 
-  <div class="map">
-    <div class="contact-us">
-      <p class="contact-us-title">Nёrds design studio</p>
-      <address class="contact-address">191186, Санкт-Петербург,
-        ул. Б. Конюшенная, д. 19/8
-      </address>
-      <a class="contact-phone" href="tel:+7(812)275-75-75">тел. +7 (812) 275-75-75</a>
-      <button class="btn contact-us-btn">Напишите нам</button>
+  <div class="map-container">
+    <div class="map" id="map">
+    </div>
+    <div class="contact-us-container">
+      <div class="contact-us">
+        <p class="contact-us-title">Nёrds design studio</p>
+        <address class="contact-address">191186, Санкт-Петербург,
+          ул. Б. Конюшенная, д. 19/8
+        </address>
+        <a class="contact-phone" href="tel:+7(812)275-75-75">тел. +7 (812) 275-75-75</a>
+        <button class="btn contact-us-btn">Напишите нам</button>
+      </div>
+
+      <div class="pop-up">
+        <div class="pop-up-intro">
+          <h2 class="form-title"> Напишите нам</h2>
+          <button class="btn close-button" type="button">
+            <img src="img/close-cross.svg">
+            <div class="visually-hidden"> Закрыть окно</div>
+          </button>
+        </div>
+        <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="your-info">
+            <div class="your-name-box">
+              <label for="name">Ваше имя:</label>
+              <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+            </div>
+            <div class="your-mail-box">
+              <label for="e-mail">Ваш e-mail:</label>
+              <input type="text" name="e-mail" id="e-mail" placeholder="email@example.com">
+            </div>
+          </div>
+          <div class="letter-text">
+            <label for="text">Текст письма:</label>
+            <textarea name="text" id="text" placeholder="В свободной форме" rows="5" cols="50"></textarea>
+          </div>
+          <button class="btn send-btn" type="submit">Отправить</button>
+        </form>
+      </div>
     </div>
   </div>
 </main>
 
-<div class="pop-up">
-  <div class="pop-up-intro">
-     <h2 class="form-title"> Напишите нам</h2>
-     <button class="btn close-button" type="button">
-      <img src="img/close-cross.svg">
-       <div class="visually-hidden"> Закрыть окно</div>
-     </button>
-  </div>
-  <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-  <div class="your-info">
-    <div class="your-name-box">
-      <label for="name">Ваше имя:</label>
-      <input type="text" name="name" id="name" placeholder="Имя Фамилия">
-    </div>
-    <div class="your-mail-box">
-      <label for="e-mail">Ваш e-mail:</label>
-      <input type="text" name="e-mail" id="e-mail" placeholder="email@example.com">
-    </div>
-  </div>
-  <div class="letter-text">
-    <label for="text">Текст письма:</label>
-    <textarea name="text" id="text" placeholder="в свободной форме" rows="5" cols="50"></textarea>
-  </div>
-    <button class="btn send-btn" type="submit">Отправить</button>
-  </form>
-</div>
 
 <footer class="footer">
   <ul class="social-list">
@@ -193,5 +199,9 @@
 
 
 <script src="js/slider.js"></script>
+<script src="js/map.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf4CaR8dNJJGN1QCsvrO_qbVPuEBsd-So&callback=initMap"></script>
+<script src="js/popup.js"></script>
 </body>
 </html>
