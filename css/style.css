@@ -62,9 +62,7 @@ img {
 }
 
 .main-logo {
-  width: 160px;
-  height: 65px;
-  padding-top: 40px;
+  margin-top: 40px;
 }
 
 .main-logo:hover {
@@ -303,12 +301,11 @@ img {
 }
 
 .btn-slide {
-  width: 135px;
+  width: 239px;
   padding-top: 16px;
   padding-bottom: 15px;
-  padding-left: 55px;
-  padding-right: 49px;
   border-radius: 3px;
+  text-align: center;
 }
 
 .services-list {
@@ -1139,6 +1136,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  flex-shrink: 0;
   width: 260px;
   margin-top: 61px;
 }
@@ -1515,6 +1513,7 @@ img {
       flex-wrap: wrap;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  width: 760px;
   margin-top: 52px;
   margin-bottom: 19px;
   margin-left: 140px;
@@ -1526,10 +1525,11 @@ img {
   position: relative;
   top: 2px;
   left: 2px;
-  height: 609px;
+  height: 576px;
   width: 360px;
   overflow: hidden;
   padding-top: 38px;
+  margin-bottom: 33px;
 }
 
 .catalog-item:nth-child(odd) {
@@ -1575,7 +1575,7 @@ img {
 
 .catalog-item-description {
   position: absolute;
-  bottom: 43px;
+  bottom: 2px;
   width: 360px;
   height: 222px;
   background: #eeeeee;
@@ -1594,43 +1594,13 @@ img {
 }
 
 .barbershop .catalog-item-description {
-  position: absolute;
-  bottom: 43px;
-  width: 360px;
+  bottom: 1px;
   height: 218px;
-  background: #eeeeee;
-  -webkit-transform: translateY(799px);
-      -ms-transform: translateY(799px);
-          transform: translateY(799px);
-  -webkit-transition: all ease 0.7s;
-  -o-transition: all ease 0.7s;
-  transition: all ease 0.7s;
-}
-
-.barbershop .catalog-item:hover .catalog-item-description {
-  -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .mishka .catalog-item-description {
-  position: absolute;
-  bottom: 43px;
-  width: 360px;
+  bottom: 1px;
   height: 218px;
-  background: #eeeeee;
-  -webkit-transform: translateY(799px);
-      -ms-transform: translateY(799px);
-          transform: translateY(799px);
-  -webkit-transition: all ease 0.7s;
-  -o-transition: all ease 0.7s;
-  transition: all ease 0.7s;
-}
-
-.mishka .catalog-item:hover .catalog-item-description {
-  -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .catalog-item:hover::before {
@@ -1656,7 +1626,7 @@ img {
   margin-right: auto;
   margin-bottom: 14px;
   margin-left: auto;
-  overflow-y: scroll;
+  overflow-y: auto;
   font-size: 16px;
   font-weight: normal;
   line-height: 18px;;
@@ -1667,12 +1637,11 @@ img {
 
 .sedona .catalog-item-text {
   width: 200px;
-  max-height: 50px;
   padding-top: 3px;
-  overflow-y:  scroll;
 }
 
 .pink .catalog-item-text {
+  width: 233px;
   margin-top: 16px;
   margin-left: 61px;
 }
