@@ -7,6 +7,7 @@
   var storage = localStorage.getItem('email');
 
   btnOpen.onclick = function () {
+    event.preventDefault();
     popup.classList.add('pop-up-active');
 
     if (storage) {
